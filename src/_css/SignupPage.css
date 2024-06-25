@@ -1,0 +1,25 @@
+.hover-hint {
+  position: relative;
+}
+
+.hover-hint::before {
+  content: 'Enter valid Code provided by Remark';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  /* background-color: #f5f5f5; */
+  background-color: white;
+  padding-left: 5px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+.hover-hint:hover::before {
+  display: block;
+}
+
+.height12px {
+  /* height: 12px; */
+  background-color: antiquewhite;
+}

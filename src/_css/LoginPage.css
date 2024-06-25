@@ -1,0 +1,20 @@
+.hover-hint {
+  position: relative;
+}
+
+.hover-hint::before {
+  content: 'Enter your username used during registration';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  /* background-color: #f5f5f5; */
+  background-color: white;
+  padding-left: 5px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+.hover-hint:hover::before {
+  display: block;
+}
